@@ -48,3 +48,50 @@ body{background:#fff;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-f
 @media (min-width:960px){
 .subpage-wrapper{padding-top:0;}
 }
+.subpage-banner{
+    background-size:cover;
+    padding-bottom:30%;
+    position:relative;
+    width:100%
+}
+.subpage-banner:before{
+    background-position:80% center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    content:'';
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100%
+}
+.subpage-banner-headline{
+    font-family:komu-a,sans-serif;
+    font-weight:400;
+    letter-spacing:1px;
+    color:#fff;
+    font-size:3.5rem;
+    left:50%;
+    letter-spacing:1px;
+    margin:7px 0 0;
+    padding:0;
+    position:absolute;
+    text-align:center;
+    text-transform:uppercase;
+    top:50%;
+    width:100%;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%)
+}
+.subpage-banner-headline sup{
+    font-size:7px;
+    top:-21px
+}
+.faq-banner{
+    background:#ec2123
+}
+.faq-banner:before{
+    background-image:url(../../../images/faq/banner-faq.jpg);
+    opacity:.5
+}
