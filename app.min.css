@@ -94,3 +94,181 @@ body{background:#fff;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-f
     background-image:url(../../../images/faq/banner-faq.jpg);
     opacity:.5
 }
+@media (max-width:1200px){
+    .select-btn{
+        font-size:1.3rem
+    }
+}
+@media (max-width:960px){
+    header.header .logo-link,footer.footer .logo-link{
+        width:84px;
+        margin:8px auto
+    }
+    header.header{
+        position:fixed;
+        height:50px;
+        overflow:visible
+    }
+    header.header .hdr-burger{
+        display:table-cell;
+        vertical-align:middle;
+        width:25%
+    }
+    header.header .hdr-logo{
+        width:50%
+    }
+    header.header .logo-link{
+        display:block
+    }
+    header.header .hdr-location{
+        position:fixed;
+        left:-100%;
+        top:66px;
+        -webkit-transition:left .37s;
+        -moz-transition:left .37s;
+        transition:left .37s
+    }
+    header.header .hdr-cart{
+        display:table-cell;
+        vertical-align:middle;
+        position:relative;
+        top:0;
+        right:0;
+        width:25%
+    }
+    header.header .hdr-cart a{
+        float:right
+    }
+    header.header nav{
+        position:fixed;
+        top:50px;
+        left:-100%;
+        min-width:260px;
+        height:100%;
+        height:-webkit-calc(100% - $navHeightMT);
+        height:-moz-calc(100% - $navHeightMT);
+        height:calc(100% - $navHeightMT);
+        background-color:#f3f3f3;
+        text-align:center;
+        -webkit-transition:left .37s;
+        -moz-transition:left .37s;
+        transition:left .37s
+    }
+    header.header nav:after{
+        content:"";
+        display:none;
+        position:absolute;
+        left:100%;
+        top:0;
+        width:64px;
+        height:100%;
+        -webkit-box-shadow:inset 16px -16px 16px 0 rgba(0,0,0,.25);
+        -moz-box-shadow:inset 16px -16px 16px 0 rgba(0,0,0,.25);
+        box-shadow:inset 16px -16px 16px 0 rgba(0,0,0,.25);
+        pointer-events:none
+    }
+    header.header nav ul{
+        float:none;
+        margin:32px 0 0
+    }
+    header.header nav ul li{
+        display:block;
+        margin:0 32px;
+        border-bottom:1px solid #ec2123
+    }
+    header.header nav ul li.is-active a{
+        color:#111
+    }
+    header.header nav ul li a{
+        width:100%
+    }
+    footer.footer{
+        text-align:center;
+        padding:48px 0
+    }
+    footer.footer .ftr-logo{
+        display:block;
+        width:auto
+    }
+    footer.footer .ftr-logo .logo-link{
+        margin:0
+    }
+    footer.footer nav{
+        display:block
+    }
+    footer.footer ul{
+        margin:6px 0
+    }
+    footer.footer ul li{
+        display:block;
+        margin:0
+    }
+    footer.footer ul li.social{
+        margin:12px 0 0
+    }
+    footer.footer ul a,footer.footer ul p{
+        padding:12px;
+        margin:0
+    }
+    footer.footer ul .social-link{
+        margin:0 6px
+    }
+    body.mobile-menu-open header.header #menuToggle span{
+        background-color:transparent
+    }
+    body.mobile-menu-open header.header #menuToggle span:before{
+        bottom:0;
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        transform:rotate(45deg)
+    }
+    body.mobile-menu-open header.header #menuToggle span:after{
+        top:0;
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        transform:rotate(-45deg)
+    }
+    body.mobile-menu-open header.header .hdr-location{
+        left:32px
+    }
+    body.mobile-menu-open header.header nav{
+        left:0
+    }
+    body.mobile-menu-open header.header nav:after{
+        display:block
+    }
+    body.mobile-menu-open #pageOverlay{
+        left:0;
+        top:0;
+        opacity:.75
+    }
+    #mainContent{
+        padding-top:50px
+    }
+}
+@media (max-width:768px){
+    header.header .hdr-cart a .cart-nav-info{
+        font-size:1.25em
+    }
+    header.header .hdr-cart a .cart-nav-info .cart-desc{
+        display:none
+    }
+}
+@media (min-width:440px){
+    .category-grid .category-tile-name{
+        font-size:2.7rem
+    }
+    .category-grid .ordering-details{
+        padding:10px
+    }
+    .category-grid .ordering-details .price{
+        font-size:2.1rem
+    }
+    .category-grid .ordering-details .price-striked{
+        font-size:1.5rem
+    }
+    .category-grid .ordering-details button{
+        font-size:1.1rem;
+        letter-spacing:1px
+    }
+}
